@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap');
+
+:root{
+--flash-color: #c96fb0;
+--green: rgb(22, 163, 22);
+}
+
+*{
+    margin: 0;
+}
+
+.all-Login, .all-Signup{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+
+
+    .left-side{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-self: start;
+        @media screen and (max-width: 1200px) {
+            width: 100%;
+            }
+  
+    font-family: Unbounded;
+    .logo-name{
+        color:var(--green);
+        span{
+            color: rgb(117,71,173);
+            
+        }
+        display: flex;
+        justify-content: center;
+        margin-bottom: 160px;
+        margin-top: 40px;
+
+        
+    } 
+
+
+    .wrapLoginInput{
+        
+        width: 300px;
+        
+            @media screen and (max-width: 1200px) {
+            width: 100%;
+            margin: 0 20vw;
+            }
+
+            @media screen and (max-width: 600px) {
+            width: 100%;
+            margin: 0 50px;
+            }
+
+        padding: 0 100px;
+        //margin: 0 50px;
+        display: flex;
+        flex-direction: column;
+        //max-width: 100%;
+
+        h2{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        label{
+            margin-bottom: 10px;
+            font-size: 0.8rem;
+        }
+        input{
+            margin-bottom: 20px;
+            padding: 0.7rem;
+            background-color: rgb(255, 255, 255);
+            font-size: 1.1rem;
+            font-family: Unbounded;
+        }
+        .log-btn{
+            margin: 15px 0;
+        }
+
+        button{
+            
+            padding: 0.7rem;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            border: solid 2px;
+            color: white;
+            font-family: Unbounded;
+            cursor: pointer;
+            
+            background: rgb(117,71,173);
+            background: linear-gradient(156deg, rgba(117,71,173,1) 59%, rgba(201,111,176,1) 82%, rgba(242,163,171,1) 93%);
+        }
+        p{
+            font-size: 0.8rem;
+            margin: 10px 0;
+        }
+
+        a{
+            text-decoration: none;
+            color: var(--flash-color);
+        }
+    }
+
+  }
+
+  .right-side{
+
+    @media screen and (max-width: 1200px) {
+        display: none;
+}
+    background-color: black;
+    height: 100vh;
+    width:60%;
+
+    background-image: url("../assets/lemon.webp");
+    background-size: cover;
+    background-position: center;
+  }
+
+
+}
